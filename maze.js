@@ -1,14 +1,13 @@
 var canvas;
 var gl;
 var program;
-var startTime = new Date();
 
 //EDITABLE CONSTANTS
 const MzX = 10; //X dimension of Maze
 const MzY = 10; //Y dimension of Maze
-var PICNUM = 3; //number of picture walls
-var POLYNUM = 6; //number of polyhedra
-var OPENNUM = 3; //number of floating opengl's
+var PICNUM = 0; //number of picture walls
+var POLYNUM = 0; //number of polyhedra
+var OPENNUM = 0; //number of floating opengl's
 
 POLYNUM = Math.min(POLYNUM,MzX*MzY-4);
 OPENNUM = Math.min(OPENNUM,MzX*MzY-4-POLYNUM);
@@ -259,9 +258,9 @@ window.onload = function() {
 				};
 				picImg.src = './pic.bmp'; 
 			};
-			ceilingImg.src = './ceiling2.bmp';
+			ceilingImg.src = 'data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==';
 		};
-		floorImg.src = './floor.bmp';
+		floorImg.src = 'data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==';
 	};
 	wallImg.src = './wall.bmp';    
 	       
