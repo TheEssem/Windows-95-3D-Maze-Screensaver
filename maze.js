@@ -27,7 +27,7 @@ var deyeX, deyeY;
 var ratX,ratY,ratdX,ratdY,rattheta,ratdtheta;
 
 var polytheta=0;
-var height =0;
+var height =1;
 
 var near = 0.1;
 var far = 50.0;
